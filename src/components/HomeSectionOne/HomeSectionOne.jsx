@@ -9,7 +9,7 @@ const HomeCard = (title, image)=>(
             <img height='140px' src={image} alt="" />
         </CardMedia>
         <CardContent sx={{background:'#eee'}}>
-            <Typography variant='body1'>{title}</Typography>
+            <Typography fontWeight='bold' variant='body1'>{title}</Typography>
         </CardContent>
     </Card>
 )

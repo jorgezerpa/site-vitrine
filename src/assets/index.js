@@ -18,6 +18,17 @@ import avatarOne from './images/avatar1.png';
 import avatarTwo from './images/avatar2.png';
 import avatarThree from './images/avatar3.png';
 
+import listLabel from './icons/list-label.png';
+
+import computerPersons from './images/computer-persons.png';
+import proposOne from './images/proposone.png';
+import proposIcon from './images/proposicon.png';
+import proposIconTwo from './images/proposicon2.png';
+import proposIconThree from './images/proposicon3.png';
+
+import partners from './images/partners.png';
+import partnersTwo from './images/partnersTwo.png';
+
 export {
         //images
     headerImage,
@@ -37,6 +48,16 @@ export {
     avatarTwo,
     avatarThree,
 
+    computerPersons,
+    proposOne,
+    proposIcon,
+    proposIconTwo,
+    proposIconThree,
+
+    partners,
+    partnersTwo,
+
         //icons
     logo,
+    listLabel,
 }

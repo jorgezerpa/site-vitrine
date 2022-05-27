@@ -8,6 +8,6 @@ export const styles = {
     },
     Menu:{
         display: 'flex',
-        gap: '10px'
+        gap: '30px'
     }
 }

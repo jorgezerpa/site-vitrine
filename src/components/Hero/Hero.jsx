@@ -22,7 +22,7 @@ const Hero = () => {
             </Grid>
             <Grid item>
                 <Button variant='contained'>FAIRE UNE DÉCLARATION</Button>
-                <Button variant='contained'>DEMANDER UN DUPLICATA</Button>
+                <Button color='secondary' variant='contained'>DEMANDER UN DUPLICATA</Button>
             </Grid>
         </Grid>
     </Box>

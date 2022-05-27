@@ -29,7 +29,7 @@ const HomeCard = (title,subtitle, image, text)=>(
 
 const HomeSectionFour = () => {
     return (
-    <div style={{textAlign: 'center', padding: '0 50px'}} >
+    <div style={{textAlign: 'center', padding: '0 50px', marginTop: '100px'}} >
 
         <Typography variant='h5' margin={5}>CE QU'ILS PENSENT DE REGISTRE D'ÉTAT CIVIL</Typography>
 

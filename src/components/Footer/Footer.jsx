@@ -12,16 +12,16 @@ const Footer = () => {
                 <img src={logo} alt="" />
             </Grid>
             <Grid sx={{background:'#FDFD96'}} paddingTop={3} item xs={4} display='flex' alignItems='center' direction='column' minHeight='160px'>
-                <Typography>Quelques liens</Typography>
-                <Typography>Acte de naissance</Typography>
-                <Typography>Acte de mariage</Typography>
-                <Typography>Acte de décès</Typography>
+                <Typography gutterBottom>Quelques liens</Typography>
+                <Typography gutterBottom>Acte de naissance</Typography>
+                <Typography gutterBottom>Acte de mariage</Typography>
+                <Typography gutterBottom>Acte de décès</Typography>
             </Grid>
             <Grid sx={{background:'#FDFD96'}} paddingTop={3} item xs={4} display='flex' alignItems='center' direction='column' minHeight='160px'>
-                <Typography>Autres liens</Typography>
-                <Typography>A propos de nous</Typography>
-                <Typography>Foire Aux Questions</Typography>
-                <Typography>Conditions Génerales d'Utilisation</Typography>
+                <Typography gutterBottom>Autres liens</Typography>
+                <Typography gutterBottom>A propos de nous</Typography>
+                <Typography gutterBottom>Foire Aux Questions</Typography>
+                <Typography gutterBottom>Conditions Génerales d'Utilisation</Typography>
             </Grid>
             <Grid sx={{background:'#000'}} item xs={12} display='flex' justifyContent='center'>
                 <Typography color='#fff'>Copyright &copy 2022. Tous droits réservés</Typography>
