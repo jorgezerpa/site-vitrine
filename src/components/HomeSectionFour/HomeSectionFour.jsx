@@ -30,7 +30,6 @@ const HomeCard = (title,subtitle, image, text)=>(
 const HomeSectionFour = () => {
     return (
     <div style={{textAlign: 'center', padding: '0 50px', marginTop: '100px'}} >
-
         <Typography variant='h6' marginBottom={5}>CE QU'ILS PENSENT DE REGISTRE D'ÉTAT CIVIL</Typography>
 
         <Grid container spacing={1}>
@@ -41,7 +40,7 @@ const HomeSectionFour = () => {
                     </Grid>
                 ))
             }
-        </Grid>    
+        </Grid>           
     </div>
   )
 }

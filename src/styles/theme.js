@@ -34,12 +34,12 @@ const theme = createTheme({
             fontWeight: 'bold',
             fontSize: '1.3rem',
             '@media (max-width:600px)': {
-              fontSize: '1rem',
+              fontSize: '.9rem',
             },
         },
         body1:{
-            fontSize: '1rem',
-            '@media (max-width:600px)': {
+            fontSize: '.8rem',
+            '@media (min-width:600px)': {
               fontSize: '.8rem',
             },
         }
