@@ -7,11 +7,11 @@ import { styles } from './styles';
 
 const HomeCard = (title, image, list)=>{
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [cardHeight, setCardHeight] = useState(window.innerWidth>600 ? '220px' : 'auto')
+    const [cardHeight, setCardHeight] = useState(window.innerWidth>600 ? '250px' : 'auto')
 
     window.addEventListener('resize', ()=>{
         setWindowWidth(window.innerWidth);
-        window.innerWidth>600 ? setCardHeight('220px')  : setCardHeight('auto');
+        window.innerWidth>600 ? setCardHeight('250px')  : setCardHeight('auto');
     })
 
     return(
@@ -20,10 +20,10 @@ const HomeCard = (title, image, list)=>{
             <img style={styles.cardImage} src={image} alt="" />
         </CardMedia>
         <CardContent sx={{minHeight: cardHeight}}>
-            <Typography  fontWeight='bold' gutterBottom  textAlign='center' variant='body1' fontSize={15}>{title}</Typography>
+            <Typography  fontWeight='bold' gutterBottom  textAlign='center' variant='body1'>{title}</Typography>
                 {
                     list.map((item, index)=>(
-                            <Typography key={item+index} textAlign='left' variant='body1'>
+                            <Typography key={item+index} textAlign='left' variant='body1' >
                                 <CircleIcon sx={{fontSize: '8px'}} />
                                 {item}</Typography>
                     ))

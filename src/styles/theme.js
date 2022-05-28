@@ -30,11 +30,12 @@ const Colors = {
 
 const theme = createTheme({
     typography : {
+        fontFamily: 'Source Sans Pro, sans-serif',
         h6:{
             fontWeight: 'bold',
-            fontSize: '1.3rem',
+            fontSize: '1.5rem',
             '@media (max-width:600px)': {
-              fontSize: '.9rem',
+              fontSize: '1.2rem',
             },
         },
         body1:{
