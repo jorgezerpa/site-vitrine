@@ -3,6 +3,8 @@ import { computerPersons, proposOne, proposIcon, proposIconTwo, proposIconThree 
 
 import { Box, Grid, Typography, Button, TextField } from '@mui/material';
 
+import { ProposForm } from '../../components';
+
 const Propos = () => {
   return (
     <div style={{textAlign: 'center'}}>
@@ -26,8 +28,10 @@ const Propos = () => {
               <Typography  textAlign='left' gutterBottom variant='body1'>3) Simplifier la relation votré les utilisateurs et les agents d'état civil.</Typography>
               <Typography  textAlign='left' gutterBottom variant='body1'>4) Améliorer les compétences des agents aux nouvelles technologies.</Typography>
               <Typography  textAlign='left' gutterBottom variant='body1'>5) Stimuler la productivité des agents.</Typography>
-              <Button variant='contained'>FAIRE UNE DÉCLARATION</Button>
-              <Button variant='contained' color='secondary'>DEMANDER UNA DUPLICATA</Button>
+              <Box marginY='35px' display='flex' justifyContent='center' gap='20px' flexWrap='wrap' >
+                <Button variant='contained' sx={{width: '200px'}}>FAIRE UNE DÉCLARATION</Button>
+                <Button variant='contained' sx={{width: '200px'}} color='secondary'>DEMANDER UNA DUPLICATA</Button>
+              </Box>
         </Grid>
         
         <Grid item xs={12} sm={6}>
@@ -49,17 +53,9 @@ const Propos = () => {
             <Typography textAlign='left' variant='h5' fontWeight='bold' gutterBottom marginBottom={6}>
                 Laissez nous un message
             </Typography>
-          
-            <div>
-              <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-              <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-            </div>
-            <div>
-              <TextField sx={{m:1}} fullWidth id="outlined-basic" label="Outlined" variant="outlined" />
-            </div>
-            <div>
-            <TextField sx={{m:1}} fullWidth id="outlined-multiline-static" multiline rows={4} defaultValue="Default Value" />        
-            </div>
+
+            <ProposForm />
+
             <Button variant='contained'>Envoyer</Button>
         </Grid>
         

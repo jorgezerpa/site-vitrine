@@ -19,6 +19,7 @@ const MobileMenu = () => (
   <Box display='flex' flexDirection='column' gap='10px' paddingBottom='10px'>
     <Typography sx={{textDecoration:'none'}} component={Link} to="/" color='#000'>accueil</Typography>
     <Typography sx={{textDecoration:'none'}} component={Link} to="/propos" color='#000'>á propos</Typography>
+    <MenuDropDown />             
     <Typography sx={{textDecoration:'none'}} component={Link} to="/faq" color='#000'>faq</Typography>
     <Button component={Link} to="/conextion" variant='contained'>conextion</Button>
   </Box>

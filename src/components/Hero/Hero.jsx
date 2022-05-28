@@ -31,7 +31,7 @@ const Hero = () => {
                     { subtitle }
                 </Typography>
             </Grid>
-            <Grid item  xs={10} sm={12} display='flex' justifyContent='center' gap='10px' flexWrap='wrap'>
+            <Grid item  xs={10} sm={12} display='flex' justifyContent='center' gap='30px' flexWrap='wrap'>
                 <MyButton sx={{width:'250px'}} margin='0 auto' variant='contained'>FAIRE UNE DÉCLARATION</MyButton>
                 <MyButton sx={{width:'250px'}} margin='0 auto' color='secondary' variant='contained'>DEMANDER UN DUPLICATA</MyButton>
             </Grid>

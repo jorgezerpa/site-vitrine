@@ -29,6 +29,8 @@ import proposIconThree from './images/proposicon3.png';
 import partners from './images/partners.png';
 import partnersTwo from './images/partnersTwo.png';
 
+import RecoveryPasswordEmail from './images/recoveryPasswordEmail.png';
+
 export {
         //images
     headerImage,
@@ -56,6 +58,8 @@ export {
 
     partners,
     partnersTwo,
+
+    RecoveryPasswordEmail,
 
         //icons
     logo,

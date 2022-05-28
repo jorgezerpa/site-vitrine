@@ -25,7 +25,7 @@ const Faq = () => {
 
       <Box sx={{backgroundColor: '#147D07', display: 'flex', justifyContent:'space-evenly'}}  padding={10}>
         <Typography color='secondary' variant='h6'>Vous avez besoin de faire établir un acte d'état civil?</Typography>
-        <Button variant='primary' color='secondary'>FAIRE UNE DÉCLARATION</Button>
+        <Button variant='contained' color='secondary'>FAIRE UNE DÉCLARATION</Button>
       </Box>
     </div>
   )

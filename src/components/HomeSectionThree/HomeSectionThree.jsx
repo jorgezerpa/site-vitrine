@@ -24,7 +24,7 @@ const HomeCard = (title, image, list)=>{
                 {
                     list.map((item, index)=>(
                             <Typography key={item+index} textAlign='left' variant='body1' >
-                                <CircleIcon sx={{fontSize: '8px'}} />
+                                <CircleIcon sx={{fontSize: '6px'}} />
                                 {item}</Typography>
                     ))
                 }
