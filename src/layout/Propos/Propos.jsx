@@ -9,8 +9,8 @@ const Propos = () => {
       <Box>
         <Typography color='secondary' sx={{backgroundColor: '#147D07'}}  padding={10} variant='h6'>A propos de nous</Typography>
       </Box>
-      <Box padding={10}>
-        <img src={computerPersons} alt="" />
+      <Box padding={10} display='flex' justifyContent='center'>
+        <img width='300px' src={computerPersons} alt="" />
       </Box>
       <Box padding={10}>
         <Typography variant='h6'>
@@ -26,8 +26,8 @@ const Propos = () => {
               <Typography  textAlign='left' gutterBottom variant='body1'>3) Simplifier la relation votré les utilisateurs et les agents d'état civil.</Typography>
               <Typography  textAlign='left' gutterBottom variant='body1'>4) Améliorer les compétences des agents aux nouvelles technologies.</Typography>
               <Typography  textAlign='left' gutterBottom variant='body1'>5) Stimuler la productivité des agents.</Typography>
-              <Button variant='primary'>FAIRE UNE DÉCLARATION</Button>
-              <Button variant='primary' color='secondary'>DEMANDER UNA DUPLICATA</Button>
+              <Button variant='contained'>FAIRE UNE DÉCLARATION</Button>
+              <Button variant='contained' color='secondary'>DEMANDER UNA DUPLICATA</Button>
         </Grid>
         
         <Grid item xs={12} sm={6}>
@@ -37,9 +37,9 @@ const Propos = () => {
 
 
       <Grid padding={10} container justifyContent='center' alignItems='center'>
-          <Grid xs={4}><img width='150px' src={proposIcon} alt="" /></Grid>
-          <Grid xs={4}><img width='150px' src={proposIconTwo} alt="" /></Grid>
-          <Grid xs={4}><img width='150px' src={proposIconThree} alt="" /></Grid>
+          <Grid xs={12}  sm={4}><img width='90%' src={proposIcon} alt="" /></Grid>
+          <Grid xs={12}  sm={4}><img width='90%' src={proposIconTwo} alt="" /></Grid>
+          <Grid xs={12}  sm={4}><img width='90%' src={proposIconThree} alt="" /></Grid>
       </Grid>
 
 
@@ -60,6 +60,7 @@ const Propos = () => {
             <div>
             <TextField sx={{m:1}} fullWidth id="outlined-multiline-static" multiline rows={4} defaultValue="Default Value" />        
             </div>
+            <Button variant='contained'>Envoyer</Button>
         </Grid>
         
 

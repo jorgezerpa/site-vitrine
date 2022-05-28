@@ -14,7 +14,7 @@ const Faq = () => {
         <Typography color='secondary' sx={{backgroundColor: '#147D07'}}  padding={10} variant='h6'>Foire aux questions</Typography>
       </Box>
 
-      <Grid container padding={10} minHeight='600px'>
+      <Grid container padding={3} minHeight='600px'>
         <Grid sx={{backgroundImage:`url(${partnersTwo})`, backgroundPosition: 'right-top', backgroundSize:'cover', backgroundRepeat:'no-repeat'}} item xs={12} sm={6} padding={5}>
       </Grid>
         

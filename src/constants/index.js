@@ -8,9 +8,9 @@ class HomeCardOne{
 }
 
 const homeCardsOne = [
-    new HomeCardOne('title one', baby),
-    new HomeCardOne('title two', married),
-    new HomeCardOne('title three', foot),
+    new HomeCardOne('Acte de naissance', baby),
+    new HomeCardOne('Acte de mariage', married),
+    new HomeCardOne('Acte de décès', foot),
 ]
 
 export {

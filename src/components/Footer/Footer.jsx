@@ -8,16 +8,16 @@ const Footer = () => {
   return (
     <div>
         <Grid container marginTop={10}>
-            <Grid sx={{background:'#FDFD96'}} paddingTop={3} item xs={4} display='flex' alignItems='center' direction='column' minHeight='160px'>
+            <Grid sx={{background:'#FDFD96'}} paddingTop={3} item xs={12} sm={4} display='flex' alignItems='center' direction='column' minHeight='160px'>
                 <img src={logo} alt="" />
             </Grid>
-            <Grid sx={{background:'#FDFD96'}} paddingTop={3} item xs={4} display='flex' alignItems='center' direction='column' minHeight='160px'>
+            <Grid sx={{background:'#FDFD96'}} paddingTop={3} item xs={12} sm={4} display='flex' alignItems='center' direction='column' minHeight='160px'>
                 <Typography gutterBottom>Quelques liens</Typography>
                 <Typography gutterBottom>Acte de naissance</Typography>
                 <Typography gutterBottom>Acte de mariage</Typography>
                 <Typography gutterBottom>Acte de décès</Typography>
             </Grid>
-            <Grid sx={{background:'#FDFD96'}} paddingTop={3} item xs={4} display='flex' alignItems='center' direction='column' minHeight='160px'>
+            <Grid sx={{background:'#FDFD96'}} paddingTop={3} item xs={12} sm={4} display='flex' alignItems='center' direction='column' minHeight='160px'>
                 <Typography gutterBottom>Autres liens</Typography>
                 <Typography gutterBottom>A propos de nous</Typography>
                 <Typography gutterBottom>Foire Aux Questions</Typography>

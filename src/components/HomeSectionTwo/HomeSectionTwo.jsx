@@ -1,18 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { homeCardsOne } from '../../constants';
 import { Typography, Grid, Card, CardMedia, CardContent } from '@mui/material'
-import { computer, listLabel } from '../../assets';
+import {  computer, computerPersons, listLabel } from '../../assets';
 
 import { styles } from './styles';
 
 const HomeSectionTwo = () => {
+    const [computerImage, setComputerImage] = useState(window.innerWidth > 600 ? computer : computerPersons );    
+    
+    window.addEventListener('resize', ()=>{
+        window.innerWidth > 600 ? setComputerImage(computer) : setComputerImage(computerPersons)
+    })
+
     return (
         <div style={styles.container}>
-            <Grid container spacing={10}>
-                <Grid item xs={12} sm={4} sx={styles.imageContainer}>
-                    <img style={styles.image} src={computer} alt="" />
+            <Grid container alignItems='center' justifyContent='center'>
+                <Grid item xs={10} sm={5} md={4} sx={styles.imageContainer}>
+                    <img style={styles.image} src={computerImage} alt="" />
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={10} sm={6}>
                     <Typography color='primary' fontWeight='bold' variant='h5' marginBottom={3}>Notre solution</Typography>
                     <Typography variant='body1' marginBottom={3}>Simplifier vos démarches de déclaration ou demande d'état civil!</Typography>
                     

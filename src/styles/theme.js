@@ -29,6 +29,23 @@ const Colors = {
 };
 
 const theme = createTheme({
+    typography : {
+        h6:{
+            fontWeight: 'bold',
+            fontSize: '1.3rem',
+            '@media (max-width:600px)': {
+              fontSize: '1rem',
+            },
+        },
+        body1:{
+            fontSize: '1rem',
+            '@media (max-width:600px)': {
+              fontSize: '.8rem',
+            },
+        }
+    },
+
+
     palette: {
         primary: {
             main: Colors.primary

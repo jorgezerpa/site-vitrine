@@ -8,7 +8,7 @@ const Connection = () => {
   return (
     <div>
       <Grid container>
-        <Grid sx={{backgroundImage:`url(${partners})`, backgroundPosition: 'right-top', backgroundSize:'cover', backgroundRepeat:'no-repeat'}} item xs={12} sm={6} padding={5}>
+        <Grid sx={{backgroundImage:`url(${partners})`, backgroundPosition: 'right-top', backgroundSize:'cover', backgroundRepeat:'no-repeat', minHeight: '400px'}} item xs={12} sm={6} padding={5}>
         
         </Grid>
         

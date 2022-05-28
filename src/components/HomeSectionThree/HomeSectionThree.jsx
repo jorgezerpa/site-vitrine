@@ -11,7 +11,7 @@ const HomeCard = (title, image, list)=>(
             <img style={styles.cardImage} src={image} alt="" />
         </CardMedia>
         <CardContent>
-            <Typography gutterBottom  textAlign='center' variant='body1' fontSize={15}>{title}</Typography>
+            <Typography fontWeight='bold' gutterBottom  textAlign='center' variant='body1' fontSize={15}>{title}</Typography>
                 {
                     list.map((item, index)=>(
                             <Typography key={item+index} textAlign='left' variant='body1' fontSize={10}>
@@ -29,7 +29,7 @@ const HomeSectionThree = () => {
     return (
     <div style={{textAlign: 'center', padding: '0 30px'}} >
         <Typography variant='h5' marginTop={10} marginBottom={5}>NOTRE VALEUR AJOUTÉE</Typography>
-        <Grid container spacing={3}>
+        <Grid container justifyContent='center' alignItems='center' spacing={3}>
             {
                 homeCardsTwo.map((card, index)=>(
                     <Grid key={index} item xs={10} sm={4}>

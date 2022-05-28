@@ -18,14 +18,14 @@ const HomeCard = (title, image)=>(
 
 const HomeSectionOne = () => {
     return (
-    <div style={{textAlign: 'center'}} >
-        <Typography variant='h5' marginTop={12} gutterBottom >QUEL ACTE D'ÉTAT CIVIL DÉSIREZ-VOUS? </Typography>
+    <div style={{textAlign: 'center', padding:'10px'}} >
+        <Typography variant='h6' marginTop={12} gutterBottom >QUEL ACTE D'ÉTAT CIVIL DÉSIREZ-VOUS? </Typography>
         <Typography variant='body1'>Demande ou Déclaration: Choisissez une catégorie selon <br /> le type d'acte d'état civil souhaité</Typography>
 
         <Grid container marginTop={5} spacing={5} display='flex' justifyContent='center' alignItem='center'>
             {
                 homeCardsOne.map((card, index)=>(
-                    <Grid key={index} item xs={10} sm={3}>
+                    <Grid key={index} item xs={9} sm={3}>
                         { HomeCard(card.title, card.image) }
                     </Grid>
                 ))

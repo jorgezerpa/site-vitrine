@@ -1,4 +1,4 @@
-import * as React from 'react';
+import  React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,7 +12,17 @@ import { DropDown, MenuDropDown } from '../../components';
 import { logo } from '../../assets';
 import { styles } from './styles';
 
-export default function ButtonAppBar() {
+const  ButtonAppBar = () => {
+
+  const [hideMenu, setHideMenu] = useState(window.innerWidth > 700 ? false : true);
+  // const [window, setWindow] = useState(window.inn)
+
+  window.addEventListener('resize', ()=>{
+    if(window.innerWidth<700) setHideMenu(true);
+    else setHideMenu(false);
+  })
+
+  
   return (
     <Box>
       <AppBar position="static" sx={styles.Appbar}>
@@ -21,16 +31,39 @@ export default function ButtonAppBar() {
             <img  src={logo} alt="" height='40px' />
           </IconButton>
 
+                {
+                  hideMenu && (
+                    <Typography sx={{textDecoration:'none'}} component={Link} to="/faq" color='#000'>Menu</Typography>
+                  )
+                }
+
             <Toolbar sx={styles.Menu} >
-              <Typography sx={{textDecoration:'none'}} component={Link} to="/" color='#000'>accueil</Typography>
-              <MenuDropDown />             
-              <Typography sx={{textDecoration:'none'}} component={Link} to="/propos" color='#000'>á propos</Typography>
-              <Typography sx={{textDecoration:'none'}} component={Link} to="/faq" color='#000'>faq</Typography>
+
+              {
+                !hideMenu && (
+                  <>
+                    <Typography sx={{textDecoration:'none'}} component={Link} to="/" color='#000'>accueil</Typography>
+                    <MenuDropDown />             
+                    <Typography sx={{textDecoration:'none'}} component={Link} to="/propos" color='#000'>á propos</Typography>
+                    <Typography sx={{textDecoration:'none'}} component={Link} to="/faq" color='#000'>faq</Typography>
+                  </>
+                )
+              }
+
               <DropDown />
-              <Button  component={Link} to="/conextion" variant='contained'>conextion</Button>
+              {
+                !hideMenu && (
+                  <Button  component={Link} to="/conextion" variant='contained'>conextion</Button>
+                )
+              }
+          
+
             </Toolbar>
         </Toolbar>
       </AppBar>
     </Box>
   );
 }
+
+
+export default ButtonAppBar
