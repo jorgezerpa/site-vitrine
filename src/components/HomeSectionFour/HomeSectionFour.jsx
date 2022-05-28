@@ -5,7 +5,7 @@ import { Typography, Grid, Card, CardMedia, CardContent } from '@mui/material'
 import { styles } from './styles';
 
 const HomeCard = (title,subtitle, image, text)=>(
-    <Card>
+    <Card sx={{minHeight: '270px'}} >
         <CardContent>
             <Grid container spacing={2} marginBottom={3}>
                 <Grid item xs={3}>

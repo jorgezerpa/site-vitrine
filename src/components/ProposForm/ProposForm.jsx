@@ -8,7 +8,7 @@ const ProposForm = () => {
     <form className='proposeform__container'>
         <div className='proposeform__group'>
           <div className='proposeform__item'>
-              <label htmlFor='connection_nom'>Nom</label>
+              <label htmlFor='connection_nom'>Prénom</label>
               <input id='connection_nom' type="text" />
           </div>
           <div className='proposeform__item'>
@@ -17,11 +17,11 @@ const ProposForm = () => {
           </div>
         </div>
         <div className='proposeform__item'>
-            <label htmlFor='connection_motdepasse'>Mot de Passe</label>
+            <label htmlFor='connection_motdepasse'>Objet</label>
             <input id='connection_motdepasse' type="text" />
         </div>
         <div className='proposeform__item'>
-            <label htmlFor='connection_motdepasse'>Mot de Passe</label>
+            <label htmlFor='connection_motdepasse'>Message</label>
             <textarea rows={7}></textarea>
         </div>
 

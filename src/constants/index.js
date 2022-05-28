@@ -56,9 +56,9 @@ class HomeCardThree{
 }
 
 const homeCardsThree = [
-    new HomeCardThree('Augustin NJIGUI', 'CEO & Founder INOV Consulting', avatarThree, 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, eligendi ducimus a libero, necessitatibus, laborum laudantium laboriosam voluptatum possimus aliquam deleniti! Molestiae a earum quaerat amet tempore labore quos quia!'),
-    new HomeCardThree('Yannick Martin MBARGA','INOV Digital Solutions',avatarOne, 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, eligendi ducimus a libero, necessitatibus, laborum laudantium laboriosam voluptatum possimus aliquam deleniti! Molestiae a earum quaerat amet tempore labore quos quia!'),
-    new HomeCardThree('TINE LEPENE Corine','Utilisatrice', avatarTwo, 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, eligendi ducimus a libero, necessitatibus, laborum laudantium laboriosam voluptatum possimus aliquam deleniti! Molestiae a earum quaerat amet tempore labore quos quia!'),
+    new HomeCardThree('TINE LEPENE Corine','Utilisatrice', avatarTwo, "Solution innovante et qui va énormement faciliter et simplifier non seulement la gestion mais aussi, renforcer la sécurité et la traçabilité des états civils au Cameroun. Cette transformation moderne tant attendue s'aligne si bien avec les idéaux de modernisation du Cameroun tant souhaités par le chef de l'état qui ne cesse d'encourager le developpement des infrastructures via les nouvelles technologies"),
+    new HomeCardThree('Augustin NJIGUI', 'CEO & Founder INOV Consulting', avatarThree, 'L’agilité et la facilité que m’offre ce système de fonctionnement d’état civil est non seulement moderne. En plus il me permet de sauvegarder mes documents important en sureté dans mon drive. C’est une solution que je recommande fortement à tout parent.'),
+    new HomeCardThree('Yannick Martin MBARGA','INOV Digital Solutions',avatarOne, "Cette solution va correspondre à la demande forte de numérisation des données d'état civil tout en assurant une conservation pérenne. Registre d'état civil a pour atout majeur de transformer le pays tout entier et ainsi, assurer un changement irréversible et universel de la condition Camerounaise, notamment sur le sujet de l’identité numérique."),
 ]
 
 export {
